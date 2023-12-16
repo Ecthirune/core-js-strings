@@ -208,7 +208,7 @@ function sumOfCodes(str) {
   }
 
   let sum = 0;
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i += 1) {
     sum += str.charCodeAt(i);
   }
 
@@ -374,7 +374,7 @@ function findLongestWord(sentence) {
   const words = sentence.split(' ');
   let longestWord = '';
 
-  for (let i = 0; i < words.length; i++) {
+  for (let i = 0; i < words.length; i += 1) {
     if (words[i].length > longestWord.length) {
       longestWord = words[i];
     }
@@ -396,7 +396,7 @@ function findLongestWord(sentence) {
 function reverseWords(str) {
   const words = str.split(' ');
 
-  for (let i = 0; i < words.length; i++) {
+  for (let i = 0; i < words.length; i += 1) {
     words[i] = words[i].split('').reverse().join('');
   }
 
@@ -417,7 +417,7 @@ function reverseWords(str) {
 function invertCase(str) {
   let inverted = '';
 
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i += 1) {
     const char = str[i];
 
     if (char === char.toUpperCase()) {
@@ -522,7 +522,7 @@ function encodeToRot13(str) {
 
   let encoded = '';
 
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i += 1) {
     const char = str[i];
     const index = alphabet.indexOf(char);
 
